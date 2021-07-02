@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Gerador de Senha</title>
+    <link rel = "stylesheet" href = "style.css"/>
+    <script src = "script.js" defer></script>
+</head>
+<body>
+
+    <div class="pw-container"><!-- caixa -->
+        <div class="pw-header"> <!-- cabeçalho -->
+            <div class="pw"> <!-- representação da senha -->
+                <span id="pw">123456ajadjd*</span>
+                <button id="copy">Copiar</button><!-- copiar senha -->
+            </div>
+
+    </div>
+
+    <div class="pw-body"> <!-- corpo -->
+        <div class="form-control"> <!-- formato -->
+            <label for="len">Password Length</label> <!-- Tamanho da senha -->
+            <input type="number" id="len" value="10" min="4" max="15">
+        </div>
+
+        <div class="form-control">
+            <label for="upper">Uppercase</label> <!-- letras maiúsculas -->
+            <input type="checkbox" id="upper"><!-- caixa para identificar click -->
+        </div>
+
+        <div class="form-control">
+            <label for="lower">Lowercase</label> <!-- letras minúsculas -->
+            <input type="checkbox" id="lower"><!-- caixa para identificar click -->
+        </div>
+
+        <div class="form-control">
+            <label for="number">Number</label> <!-- números -->
+            <input type="checkbox" id="number"><!-- caixa para identificar click -->
+        </div>
+
+        <div class="form-control">
+            <label for="symbol">Symbol</label> <!-- símbolos que serão utilizados na senha -->
+            <input type="checkbox" id="symbol"><!-- caixa para identificar click -->
+        </div>
+
+        <button class ="generate" id="generate">Gerar senha</button>
+
+    </div>
+
+</div>
+    
+</body>
+</html>
